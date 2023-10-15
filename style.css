@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+#gameBoard {
+    border: 3px solid;
+    height: 500px;
+    width: 1000px;
+    box-shadow: black 0 0 5px;
+}
+
+#scoreTxt {
+    font-size: 100px;
+    cursor: default;
+}
+
+#resetBtn {
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 20px;
+    border: solid 2px;
+    box-shadow: rgba(0, 0, 0, 0.574) inset 0 0 2px;
+    width: 10em;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#resetBtn:hover {
+    border: rgb(142, 47, 47) solid 2px;
+    background-color: rgb(182, 47, 47);
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.677) 1px 1px 0;
+}
+
+@media(max-width: 500px){
+    #gameBoard{height: 300px; width: 300px;}
+}
